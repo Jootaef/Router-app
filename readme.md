@@ -1,21 +1,21 @@
-# Next.js Playground
+# Proyecto de Ejemplo: App Router
 
-This playground is used by the DX team to explore, test, and demo new Next.js features. It serves as a starting point for writing documentation and helps us understand features, identify bugs, and provide feedback to the Next.js team.
+Este proyecto es una base para experimentar y aprender sobre enrutamiento y desarrollo web moderno. Aquí puedes probar nuevas ideas, personalizar rutas y explorar integraciones con tecnologías actuales.
 
-## Running Locally
+## ¿Cómo ejecutar localmente?
 
-1. Install dependencies:
-
-```sh
-pnpm install
-```
-
-2. Start the dev server:
+1. Instala las dependencias:
 
 ```sh
-pnpm dev
+npm install
 ```
 
-## Documentation
+2. Inicia el servidor de desarrollo:
 
-https://nextjs.org/docs
+```sh
+npm run start
+```
+
+## Más información
+
+Consulta la documentación oficial de tu framework favorito para profundizar más.

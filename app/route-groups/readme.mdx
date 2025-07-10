@@ -1,23 +1,17 @@
-# Route Groups
+# Route Grouping
 
-Route groups can be used to:
+Route groups let you organize your application's structure without affecting the URL. You can create different layouts for specific sections and keep your codebase tidy.
 
-- Opt a route segment out of a shared layout.
-- Organize routes without affecting the URL structure.
-- Create multiple root layouts by partitioning the top level of the
-  application.
+### Example
 
-### Demo
+- This example uses groups to create shared layouts in different parts of the app.
+  - (main): main interface
+    - (shop): shop section
+    - (marketing): marketing section
+  - (checkout): group that doesn't use the main layout
 
-- This example uses Route Groups to create layouts for different sections of an app.
-  - (main): primary shared UI
-    - (shop): ecommerce specific shared UI
-    - (marketing): marketing specific shared UI
-  - (checkout): top level group that opts out of primary shared UI
-- Try navigating pages and noting the different layouts used for each
-  section.
+Navigate between pages and see how layouts change depending on the section.
 
-### Links
+### More information
 
-- [Docs](https://nextjs.org/docs/app/building-your-application/routing/route-groups)
-- [Code](https://github.com/vercel/next-app-router-playground/tree/main/app/route-groups)
+Check the official documentation to learn more about route grouping.

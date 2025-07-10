@@ -6,7 +6,7 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
+    border-color: #1e3a8a; /* azul oscuro */
   }
 }
 
@@ -16,17 +16,11 @@
 }
 
 @theme {
-  --color-gray-50: var(--color-neutral-50);
-  --color-gray-100: var(--color-neutral-100);
-  --color-gray-200: var(--color-neutral-200);
-  --color-gray-300: var(--color-neutral-300);
-  --color-gray-400: var(--color-neutral-400);
-  --color-gray-500: var(--color-neutral-500);
-  --color-gray-600: var(--color-neutral-600);
-  --color-gray-700: var(--color-neutral-700);
-  --color-gray-800: var(--color-neutral-800);
-  --color-gray-900: var(--color-neutral-900);
-  --color-gray-950: var(--color-neutral-950);
+  --color-primary: #1e3a8a; /* azul principal */
+  --color-secondary: #3b82f6; /* azul claro */
+  --color-bg: #ffffff; /* blanco */
+  --color-text: #1e3a8a; /* azul oscuro */
+  --color-accent: #60a5fa; /* azul acento */
 
   --animate-shimmer: shimmer 1.5s infinite;
 
@@ -51,49 +45,20 @@
   }
 }
 
-@keyframes rerender {
-  0%,
-  40% {
-    border-color: currentColor;
-  }
-}
-
-@keyframes highlight {
-  0%,
-  40% {
-    background: var(--color-blue-600);
-    color: var(--color-blue-100);
-  }
-}
-
-@keyframes loading {
-  0% {
-    opacity: 0.2;
-  }
-  20% {
-    opacity: 1;
-    transform: translateX(1px);
-  }
-  100% {
-    opacity: 0.2;
-  }
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans), sans-serif;
 }
 
 .spinner {
-  background: conic-gradient(transparent 10deg, white, transparent 320deg);
-
-  /* Mask to create a hollow center 🍩 */
+  background: conic-gradient(transparent 10deg, var(--color-primary), transparent 320deg);
   --border-size: 3px;
   mask-image: radial-gradient(
     closest-side,
     transparent calc(100% - var(--border-size)),
-    white calc(100% - var(--border-size))
+    var(--color-bg) calc(100% - var(--border-size))
   );
-
-  /* Animation:
-     - opacity: render invisible and use animations to reveal spinner
-     - fade: fade in after delay to prevent flashes of UI on fast navigations 
-     - rotate: rotate indefinitely while rendered */
   opacity: 0;
   animation:
     fade 500ms 150ms forwards,
@@ -112,7 +77,6 @@
   transition:
     opacity 0.5s,
     transform 0.5s;
-
   @starting-style {
     opacity: 0;
     transform: scale(0.95);
