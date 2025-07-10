@@ -5,8 +5,8 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <nav>
           <ul>
             <li><a href="/dashboard">Dashboard</a></li>
-            <li><a href="/dashboard/customers">Clientes</a></li>
-            <li><a href="/dashboard/invoices">Facturas</a></li>
+            <li><a href="/dashboard/customers">Customers</a></li>
+            <li><a href="/dashboard/invoices">Invoices</a></li>
           </ul>
         </nav>
       </aside>
