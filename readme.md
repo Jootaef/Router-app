@@ -1,13 +1,21 @@
-# Learn Next.js
+# Next.js Playground
 
-This repository contains starter templates and final code for [Learn Next.js](https://nextjs.org/learn) courses:
+This playground is used by the DX team to explore, test, and demo new Next.js features. It serves as a starting point for writing documentation and helps us understand features, identify bugs, and provide feedback to the Next.js team.
 
-- 🆕 [Learn Next.js App Router, Data Fetching, Databases, and Auth](https://nextjs.org/learn) ([demo](https://next-learn-dashboard.vercel.sh))
-- [Learn Basics and TypeScript](https://nextjs.org/learn-pages-router/basics/create-nextjs-app) ([demo](https://next-learn-starter.vercel.app))
-- [Learn SEO](https://nextjs.org/learn-pages-router/seo/introduction-to-seo) ([demo](https://next-seo-starter.vercel.app))
+## Running Locally
 
-## Contributions
+1. Install dependencies:
 
-The code for the example apps you build using Next.js Learn live in this repository and we'd be grateful for your contributions.
+```sh
+pnpm install
+```
 
-The course curriculum is currently not open sourced, but you can [create an issue](https://github.com/vercel/next-learn/issues/new) if you find a mistake.
+2. Start the dev server:
+
+```sh
+pnpm dev
+```
+
+## Documentation
+
+https://nextjs.org/docs
