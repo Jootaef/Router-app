@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { UserIcon, PageIcon, GroupIcon, LockIcon } from "@/icons";
+import { HomeIcon, DocumentTextIcon, UsersIcon, ArrowLeftOnRectangleIcon } from "@heroicons/react/24/outline";
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -14,13 +14,13 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           </div>
           <nav className="flex flex-col gap-2">
             <Link href="/dashboard" className="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-50 font-medium">
-              <UserIcon className="h-5 w-5" /> Home
+              <HomeIcon className="h-5 w-5" /> Home
             </Link>
             <Link href="/dashboard/invoices" className="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-50 font-medium">
-              <PageIcon className="h-5 w-5" /> Invoices
+              <DocumentTextIcon className="h-5 w-5" /> Invoices
             </Link>
             <Link href="/dashboard/customers" className="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-50 font-medium">
-              <GroupIcon className="h-5 w-5" /> Customers
+              <UsersIcon className="h-5 w-5" /> Customers
             </Link>
           </nav>
         </div>
@@ -28,7 +28,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           © {new Date().getFullYear()} Acme. Created by Jaydan Valencia.
         </footer>
         <button className="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-red-50 font-medium mt-4">
-          <LockIcon className="h-5 w-5" /> Sign Out
+          <ArrowLeftOnRectangleIcon className="h-5 w-5" /> Sign Out
         </button>
       </aside>
       <main className="flex-1 p-8 overflow-y-auto">{children}</main>
