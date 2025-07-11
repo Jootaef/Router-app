@@ -1,13 +1,25 @@
-# Learn Next.js
+# Acme Financial Dashboard
 
-This repository contains starter templates and final code for [Learn Next.js](https://nextjs.org/learn) courses:
+A modern financial dashboard web app built with Next.js and Tailwind CSS.
 
-- 🆕 [Learn Next.js App Router, Data Fetching, Databases, and Auth](https://nextjs.org/learn) ([demo](https://next-learn-dashboard.vercel.sh))
-- [Learn Basics and TypeScript](https://nextjs.org/learn-pages-router/basics/create-nextjs-app) ([demo](https://next-learn-starter.vercel.app))
-- [Learn SEO](https://nextjs.org/learn-pages-router/seo/introduction-to-seo) ([demo](https://next-seo-starter.vercel.app))
+## Features
+- Responsive dashboard for managing invoices and customers
+- Clean sidebar navigation
+- Login system (demo credentials: admin/admin)
+- Styled tables and status badges
 
-## Contributions
+## Getting Started
+1. Install dependencies:
+   ```bash
+   npm install.
+   ```
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-The code for the example apps you build using Next.js Learn live in this repository and we'd be grateful for your contributions.
+## Author
+Created by **Jaydan Valencia**
 
-The course curriculum is currently not open sourced, but you can [create an issue](https://github.com/vercel/next-learn/issues/new) if you find a mistake.
+---
+This project is for educational purposes. All code and design are original or generated for this project. The app is named **Acme**.
